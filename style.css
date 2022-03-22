@@ -2,6 +2,7 @@
 
 body{
     font-family: 'Raleway', sans-serif;
+    background: #F5F5F5;
 }
 .topo{
     display: flex;
@@ -12,185 +13,156 @@ body{
     position: static;
     width: 1136px;
     height: 88px;
-    margin: 0px 152px;
+    left: 152px;
     top: 0px;
 }
-
 .logo{
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 0px;
     position: static;
+    width: 170px;
     height: 24px;
     left: 0px;
     top: 32px;
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin: 0px 0 0 200px;
-
+    margin: 0px 152px;
 }
-
-#img1{
-    height: 16px;
-    width: 16px;
-    left: 1px;
-    top: 4px;
-    border-radius: 0px;
-    left: 4.17%;
-    right: 29.17%;
-    top: 16.67%;    
-    bottom: 16.67%;
+.logo img{
+    position: static;
+    width: 24px;
+    height: 24px;
+    left: 0px;
+    top: 0px;
+    margin-right: 14px;
 }
-#img2{
-    position: absolute;
-    height: 8px;
-    width: 8px;
-    left: 165px;
-    top: 63px;
-    border-radius: 0px;
-}
-
-#img3{
-    position: absolute;
-    height: 8px;
-    width: 8px;
-    left: 165px;
-    top: 80px;
-    border-radius: 0px;
-}
-
-#nome{
-    position: absolute;
-    width: 120px;
-    height: 19px;
-    left: 175px;
-    top: 65px;
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 19px;
-    color: #000000;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    margin: 0px 8px;
-}
-
-.links{
+.links-topo{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
     position: static;
     width: 642px;
     height: 19px;
     left: 494px;
-    top: 34.5px; 
+    top: 34.5px;
+}
+.links-topo li{
+    display: inline;
+    margin-right: 15px;
+}
+.links-topo a, .links-contatos a {
+    color: #000000;
+    text-decoration: none;
+}
+#linkContato{
+    font-weight: bold;
+}
+.apresentacao{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    position: static;
+    width: 1136px;
+    height: 368px;
+    left: 152px;
     flex: none;
     order: 1;
     flex-grow: 0;
     margin: 0px 0px;
 }
-
-.links li, .contatos li {
-    display: inline;
-    margin-right: 15px;
-}
-
-.links a, .contatos a {
-    color: #000000;
-    text-decoration: none;
-}
-
-#linkContato{
-    font-weight: bold;
-}
-
-.apresentacao{
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
     position: static;
     width: 751px;
-    height: 246px;
+    height: 250px;
     left: 0px;
     top: 61px;
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin: 50px 152px;
+    margin-left: 152px;
 }
-
-
-h1{
+.container h1{
     position: static;
     width: 751px;
     height: 122px;
     left: 0px;
     top: 0px;
-    font-family: Raleway;
     font-style: normal;
-    font-weight: bold;
-    font-size: 52px;
+    font-weight: 700;
+    font-size: 50px;
     line-height: 61px;
+    color: #464646;
     flex: none;
     order: 0;
     align-self: stretch;
     flex-grow: 0;
-    margin: 24px 0px;
+    margin: 14px 0px;
 }
-
-h2{
-position: static;
-width: 751px;
-height: 52px;
-left: 0px;
-top: 146px;
-font-family: Raleway;
-font-style: normal;
-font-weight: normal;
-font-size: 22px;
-line-height: 26px;
-flex: none;
-order: 1;
-align-self: stretch;
-flex-grow: 0;
-margin: 24px 0px;
+.container h2{
+    position: static;
+    width: 751px;
+    height: 52px;
+    left: 0px;
+    top: 146px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+    color: #464646;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 14px 0px;
 }
-
-#foto{
-    position: absolute;
-    width: 350px;
-    height: 350px;
+.links-contatos{
+    width: 90px;
+    height: 34px;
+    display: inline-flex;
+    order: 1;
+    align-items: center;
+}
+.links-contatos li{
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 2px;
+    position: static;
+    width: 90px;
+    height: 34px;
+    flex: none;
+    margin: 0px 0px;
+}
+.foto img{
+    position: static;
+    width: 328px;
+    height: 328px;
     left: 768px;
     top: 0px;
     flex: none;
     order: 1;
     flex-grow: 0;
-    margin: 190px 140px;
+    margin: 0px 100px 0px 20px;
     border-radius: 50%;
 }
-
-.contatos{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    position: static;
-    width: 467px;
-    height: 24px;
-    left: 0px;
-    top: 222px;
-    flex: none;
-    order: 2;
-    flex-grow: 0;
-    margin: 50px 0px;
-}
-
 .sobre{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 64px;
+    padding: 64px 90px 64px 64px;
     position: static;
     width: 1440px;
-    height: 300px;
+    height: 310px;
     left: 0px;
     top: 520px;
     background: #EAF2FD;
@@ -198,40 +170,93 @@ margin: 24px 0px;
     order: 2;
     align-self: stretch;
     flex-grow: 0;
-    margin: 150px 0px;
+    margin: 32px 0px;
 }
-
-#sobre{
+.sobreMim{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
     position: static;
-    width: 166px;
-    height: 38px;
-    left: 0px;
-    top: 0px;
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 38px;
+    width: 1500px;
+    height: 300x;
+    left: 152px;
+    top: 64px;
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin: 16px 0 0 100px;
+    margin: 10px 0px;
 }
-
-p{
+.sobreMim h2{
     position: static;
+    width: 200px;
+    height: 38px;
+    left: 0px;
+    top: 0px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #464646;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 16px 100px;
+}
+.texto{
+    position: static;
+    width: 75%;
+    height: 250px;
     left: 0px;
     top: 54px;
-    font-family: Raleway;
     font-style: normal;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 19px;  
-    margin: 16px 527px 0 100px;
-    text-align: justify;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    color: #464646;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 527px 0px 100px;
 }
-
-.skills{
+.texto p{
+    padding: 5px 0px;
+}
+.listas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    position: static;
+    width: 1440px;
+    height: 1245px;
+    left: 0px;
+    top: 935px;
+    flex: none;
+    order: 3;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 32px 0px;
+}
+.skills h2, .hobbies h2{
+    position: static;
+    width: 82px;
+    height: 38px;
+    left: 527px;
+    top: 0px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    color: #464646;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 32px 0px;
+    padding-left: 230px;
+}
+.skills .hobbies{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -240,49 +265,129 @@ p{
     width: 1136px;
     height: 244px;
     left: 152px;
-    top: 0px;
+    top: 332px;
     flex: none;
-    order: 0;
+    order: 1;
     flex-grow: 0;
-    margin: 88px 669px;
+    margin: 88px 0px;
 }
-
-.skills{
-    width: 940px;
-	margin: 0 auto;
-	padding: 50px 0;
-    text-align: center;
-}
-
-#skills{
-    position: static;
-    width: 82px;
-    height: 38px;
-    left: 527px;
-    top: 0px;
-    font-family: Raleway;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 32px;
-    line-height: 38px;
-    text-align: center;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 32px 0px;
-}
-
-.lista-skills li{
+.skills li, .hobbies li{
     display: inline-block;
-    padding: 16px;
+	text-align: center;
+	width: 30%;
+	vertical-align: top;
+	margin: 0px 16px;
+	box-sizing: border-box;
+	border-radius: 10px;
+    background: #FFFFFF;
     position: static;
     width: 176px;
     height: 174px;
-    left: 960px;
-    background: #FFFFFF;
-    margin: 0px 16px;
-    text-align: center;
-    vertical-align: top;
 }
-
-
+.descricao{
+top: 139px;
+}
+li img{
+padding-top: 100px;
+}
+.hobbies{
+    margin-top: 100px;
+}
+.formacao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 82px;
+    position: static;
+    width: 1440px;
+    height: 581px;
+    left: 0px;
+    top: 664px;
+    background: #EAF2FD;
+    flex: none;
+    order: 2;
+    align-self: stretch;
+    flex-grow: 0;
+    margin: 88px 0px 0px 0px;
+}
+.formacao h2{
+    position: static;
+    width: 500px;
+    height: 38px;
+    left: 555px;
+    top: 82px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    color: #464646;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 0px;
+    padding-right: 180px;
+}
+.lista-formacao{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    position: static;
+    width: 1136px;
+    height: 347px;
+    left: 152px;
+    top: 152px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0px 0px;
+}
+.formacao li {
+    display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	box-sizing: border-box;
+	border-radius: 10px;
+    position: static;
+    width: 368px;
+    height: 347px;
+    padding-right: 100px;
+}
+.descricao-formacao{
+    position: static;
+    width: 300px;
+    height: 26px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    color: #464646;
+    text-align: justify;
+}
+.data{
+    position: static;
+    width: 250px;
+    height: 19px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464646;
+    text-align: justify; 
+}
+.experiencia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    position: static;
+    width: 1136px;
+    height: 1886px;
+    left: 152px;
+    top: 2212px;
+    flex: none;
+    order: 4;
+    flex-grow: 0;
+    margin: 32px 0px;
+}

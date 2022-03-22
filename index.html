@@ -9,15 +9,14 @@
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
     </head>
-
     <body>
         <header>
             <div class="topo">
-                <img id="img1" src="assets/imagens/Vector.png">
-                <img id="img2" src="assets/imagens/Vector.png">
-                <img id="img3" src="assets/imagens/Vector.png">
-                <p id="nome">Conceição Peres</p>
-                <ul class="links">
+                <div class="logo">
+                    <img src="assets/imagens/icons.png">
+                    Conceição Peres
+                </div>
+                <ul class="links-topo">
                     <li id="linkSobre"><a href="#sobre">Sobre mim</a></li>
                     <li id="linkSkills"><a href="#skills">Skills</a></li>
                     <li id="linkHobbies"><a href="#hobbies">Hobbies</a></li>
@@ -27,42 +26,108 @@
                 </ul>
             </div>
         </header>
-
         <main>
-            <section class="apresentacao">
-                <h1>Olá meu nome é Conceição Peres e sou desenvolvedora WEB</h1>
-                <h2>Sou formada em Sistema de informação e atualmente estou participando do programa Oracle ONE na Alura com foco em programação.</h2>
-                <ul class="contatos">
-                    <li id="linkGit"><a href="https://github.com/conceicao-peres" target="_blank">Github <img src="assets/imagens/seta.png"></a></li>
-                    <li id="linkLinkedin"><a href="https://www.linkedin.com/in/conceicao-peres-da-silva" target="_blank">Linkedin <img src="assets/imagens/seta.png"></a></li>
-                    <li id="linkCurriculo"><a href="" target="_blank">Currículo <img src="assets/imagens/seta.png"></a></li>
-                </ul>
-                <img id="foto" src="https://github.com/conceicao-peres.png">
-            </section>
+            <div class="apresentacao">
+                <div class="container">
+                    <h1>Olá meu nome é Conceição, sou desenvolvedora Front-end.</h1>
+                    <h2>Sou formada em Sistema de informação e atualmente estou em transição de carreira.</h2>
+                    <ul class="links-contatos">
+                        <li id="linkGit"><a href="https://github.com/conceicao-peres" target="_blank">Github <img src="assets/imagens/seta.png"></a></li>
+                        <li id="linkLinkedin"><a href="https://www.linkedin.com/in/conceicao-peres-da-silva" target="_blank">Linkedin <img src="assets/imagens/seta.png"></a></li>
+                        <li id="linkCurriculo"><a href="" target="_blank">Currículo <img src="assets/imagens/seta.png"></a></li>
+                    </ul>
+                </div>
+                <div class="foto">
+                    <img src="https://github.com/conceicao-peres.png">
+                </div>
+            </div>
+            <div class="sobre">
+                <div class="sobreMim">
+                    <h2 id="sobre">Sobre mim</h2>
+                    <div class="texto">
+                        <p>Minha experiencia profissional inclui usar análises de dados para planejamento estratégico (médio e longo prazo), na elaboração de Forecast, Dimensionamento e Gestão de Escalas e em realizar estudos com o intuito de auxiliar a operação e áreas de apoio a fim de garantir a performance e qualidade no atendimento.</p>
+                        <p>No momento estou em transição de carreira e em processo de requalificação profissional para recolocação no mercado de trabalho. Estou cursando a trilha de desenvolvimento na Alura e participando de Bootcamps e Challenges com foco em programação.</p>
+                        <p>Procuro por oportunidades que me proporcionem chances de expandir conhecimentos e promover crescimento profissional, além de alcançar resultados para a empresa por meio das minhas experiências adquiridas.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="listas">
+                <div class="skills">
+                    <h2 id="skills">Skills</h2>
+                    <ul class="lista-skills">
+                        <li>
+                            <img src="assets/imagens/html.png">
+                            <p class="descricao"> HTML5</p>
+                        </li>
+                        <li>
+                            <img src="assets/imagens/cssr.png">
+                            <p class="descricao"> CSS</p>
+                        </li>
+                        <li>
+                            <img src="assets/imagens/js.png">
+                            <p class="descricao">Javascript</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="hobbies">
+                    <h2 id="hobbies">Hobbies</h2>
+                    <ul class="lista-hobbies">
+                        <li>
+                            <img src="assets/imagens/ciclista.png">
+                            <p class="descricao">Pedalar</p>
+                        </li>
+                        <li>
+                            <img src="assets/imagens/cozinhar.png">
+                            <p class="descricao">Vegan Food</p>
+                        </li>
+                        <li>
+                            <img src="assets/imagens/fotografia.png">
+                            <p class="descricao">Fotografia</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="formacao">
+                    <h2 id="formacao">Formação Acadêmica</h2>
+                    <ul class="lista-formacao">
+                        <li>
+                            <img src="assets/imagens/anhanguera.jpeg">
+                            <p class="descricao-formacao">Sistema de informação</p>
+                            <p class="data">2011 - Uniban</p>
+                        </li>
+                        <li>
+                            <img src="assets/imagens/hsm.jpeg">
+                            <p class="descricao-formacao">Gestão estratégica de Marketing</p>
+                            <p class="data">2020 - HSM University </p>
+                        </li>
+                        <li>
+                            <img src="assets/imagens/alura.png">
+                            <p class="descricao-formacao">Formação Front-end</p>
+                            <p class="data">Em andamento - Alura</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
-            <section class="sobre">
-                <h2 id="sobre">Sobre mim</h2>
-                <p>Minha experiencia profissional inclui usar análises de dados para planejamento estratégico (médio e longo prazo), na elaboração de Forecast, Dimensionamento e Gestão de Escalas e em realizar estudos com o intuito de auxiliar a operação e áreas de apoio a fim de garantir a performance e qualidade no atendimento.</p>
-                <p>No momento estou em processo de requalificação profissional e em busca de recolocação no mercado de trabalho. Procuro por oportunidades que me proporcionem chances de expandir conhecimentos e promover crescimento profissional, além de alcançar resultados positivos para a empresa por meio das minhas experiências adquiridas.</p>
-            </section>
+            <div class="experiencia-profissional">
+                <h2></h2>
+                <div class="itens">
+                    <div class="experiencia">
+                        <div class="img-experiencia">
 
-            <section class="skills">
-                <h2 id="skills">Skills</h2>
-                <ul class="lista-skills">
-                    <li>
-                        <img src="assets/imagens/html.png">
-                        HTML5
-                    </li>
-                    <li>
-                        <img src="assets/imagens/cssr.png">
-                        CSS
-                    </li>
-                    <li>
-                        <img src="assets/imagens/js.png">
-                        Javascript
-                    </li>
-                </ul>
-            </section>
+                        </div>
+                    </div>
+
+                    <div class="experiencia">
+                        
+                    </div>
+
+                    <div class="experiencia">
+                        
+                    </div>
+                </div>
+              
+            </div>
+    
         </main>
 
         <footer>
