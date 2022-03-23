@@ -3,59 +3,63 @@
 body{
     font-family: 'Raleway', sans-serif;
     background: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    height: 5020px;
+    width: 1440px;
+
 }
 .topo{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 32px 0px;
     position: static;
     width: 1136px;
     height: 88px;
     left: 152px;
-    top: 0px;
+    flex: none;
+    margin: 30px 152px;
 }
 .logo{
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0px;
     position: static;
-    width: 170px;
+    width: 160px;
     height: 24px;
-    left: 0px;
     top: 32px;
     flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 0px 152px;
-}
-.logo img{
-    position: static;
-    width: 24px;
-    height: 24px;
-    left: 0px;
-    top: 0px;
-    margin-right: 14px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464646;
 }
 .links-topo{
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0px;
     position: static;
     width: 642px;
     height: 19px;
     left: 494px;
     top: 34.5px;
-}
+    flex: none;
+    order: 1;
+ }
 .links-topo li{
-    display: inline;
-    margin-right: 15px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464646;
+    margin-left: 10px;
 }
-.links-topo a, .links-contatos a {
-    color: #000000;
+.links-topo a, .links-contatos a{
+    color: #464646;
     text-decoration: none;
 }
 #linkContato{
@@ -66,53 +70,41 @@ body{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 0px;
     position: static;
     width: 1136px;
     height: 368px;
     left: 152px;
     flex: none;
     order: 1;
-    flex-grow: 0;
-    margin: 0px 0px;
 }
 .container{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
     position: static;
     width: 751px;
-    height: 250px;
+    height: 246px;
     left: 0px;
     top: 61px;
     flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin-left: 152px;
+    margin: 0px 20px 0px 180px;
 }
-.container h1{
+h1{
     position: static;
     width: 751px;
     height: 122px;
-    left: 0px;
-    top: 0px;
     font-style: normal;
     font-weight: 700;
     font-size: 50px;
     line-height: 61px;
     color: #464646;
     flex: none;
-    order: 0;
     align-self: stretch;
-    flex-grow: 0;
-    margin: 14px 0px;
 }
-.container h2{
+.container p{
     position: static;
     width: 751px;
     height: 52px;
-    left: 0px;
     top: 146px;
     font-style: normal;
     font-weight: 400;
@@ -122,48 +114,48 @@ body{
     flex: none;
     order: 1;
     align-self: stretch;
-    flex-grow: 0;
-    margin: 14px 0px;
+    margin: 24px 0px;
 }
-.links-contatos{
-    width: 90px;
-    height: 34px;
-    display: inline-flex;
-    order: 1;
-    align-items: center;
+.apresentacao ul{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    position: static;
+    width: 467px;
+    height: 24px;
+    left: 0px;
+    top: 222px;
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+    margin: 24px 0px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464646;
 }
 .links-contatos li{
-    display: inline-flex;
-    flex-direction: row;
-    align-items: center;
-    margin-right: 2px;
-    position: static;
-    width: 90px;
-    height: 34px;
-    flex: none;
-    margin: 0px 0px;
+    margin-right: 15px;
 }
 .foto img{
     position: static;
-    width: 328px;
-    height: 328px;
+    width: 368px;
+    height: 368px;
     left: 768px;
-    top: 0px;
     flex: none;
     order: 1;
-    flex-grow: 0;
-    margin: 0px 100px 0px 20px;
     border-radius: 50%;
 }
-.sobre{
+.sobre, .formacao{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 64px 90px 64px 64px;
+    padding: 34px;
     position: static;
     width: 1440px;
-    height: 310px;
-    left: 0px;
+    height: 300px;
     top: 520px;
     background: #EAF2FD;
     flex: none;
@@ -176,48 +168,37 @@ body{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
     position: static;
-    width: 1500px;
-    height: 300x;
-    left: 152px;
-    top: 64px;
+    width: 1136px;
+    height: 300px;
     flex: none;
-    order: 0;
-    flex-grow: 0;
     margin: 10px 0px;
 }
 .sobreMim h2{
     position: static;
     width: 200px;
     height: 38px;
-    left: 0px;
-    top: 0px;
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
     line-height: 38px;
     color: #464646;
     flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 16px 100px;
+    margin: 16px 0px;
 }
 .texto{
     position: static;
-    width: 75%;
-    height: 250px;
-    left: 0px;
+    width: 1000px;
+    height: 200px;
     top: 54px;
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
-    line-height: 20px;
+    line-height: 19px;
     color: #464646;
     flex: none;
     order: 1;
-    flex-grow: 0;
-    margin: 0px 527px 0px 100px;
+    margin: 16px 0px;
 }
 .texto p{
     padding: 5px 0px;
@@ -226,91 +207,94 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px;
     position: static;
     width: 1440px;
     height: 1245px;
-    left: 0px;
     top: 935px;
     flex: none;
     order: 3;
     align-self: stretch;
-    flex-grow: 0;
     margin: 32px 0px;
-}
-.skills h2, .hobbies h2{
-    position: static;
-    width: 82px;
-    height: 38px;
-    left: 527px;
-    top: 0px;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 32px;
-    line-height: 38px;
-    text-align: center;
-    color: #464646;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 32px 0px;
-    padding-left: 230px;
 }
 .skills .hobbies{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px;
     position: static;
     width: 1136px;
     height: 244px;
     left: 152px;
-    top: 332px;
     flex: none;
-    order: 1;
-    flex-grow: 0;
     margin: 88px 0px;
 }
+.lista-skills, .lista-hobbies, .lista-formacao{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    position: static;
+    width: 1136px;
+    height: 174px;
+    top: 70px;
+    flex: none;
+    order: 1;
+    margin: 20px 0px 50px 460px;
+}
+h2{
+    position: static;
+    width: 82px;
+    height: 38px;
+    left: 527px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+    color: #464646;
+    flex: none;
+    margin: 32px 0px 32px 750px;
+}
 .skills li, .hobbies li{
-    display: inline-block;
-	text-align: center;
-	width: 30%;
-	vertical-align: top;
-	margin: 0px 16px;
-	box-sizing: border-box;
-	border-radius: 10px;
-    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 16px;
     position: static;
     width: 176px;
     height: 174px;
+    background: #FFFFFF;
+    flex: none;
+    margin: 0px 16px;
+    align-items: center;
+    border-radius: 10%;
+}
+.lista-skills img{
+    position: static;
+    width: 24px;
+    height: 37px;
+    left: 16px;
+    top: 94px;
+    font-family: 'Font Awesome 5 Brands';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 37px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #2A7AE4;
+    flex: none; 
+    margin: 8px 0px;
 }
 .descricao{
-top: 139px;
-}
-li img{
-padding-top: 100px;
-}
-.hobbies{
-    margin-top: 100px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
 }
 .formacao{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 82px;
-    position: static;
-    width: 1440px;
-    height: 581px;
-    left: 0px;
-    top: 664px;
-    background: #EAF2FD;
-    flex: none;
-    order: 2;
-    align-self: stretch;
-    flex-grow: 0;
-    margin: 88px 0px 0px 0px;
+    height: 500px;
 }
-.formacao h2{
+.formacao h2, .experiencia-area h2{
     position: static;
     width: 500px;
     height: 38px;
@@ -325,69 +309,230 @@ padding-top: 100px;
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin: 0px 0px;
-    padding-right: 180px;
+    margin: 32px 0px;
 }
 .lista-formacao{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    padding: 0px;
-    position: static;
-    width: 1136px;
-    height: 347px;
-    left: 152px;
-    top: 152px;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
-    margin: 0px 0px;
+    margin: 130px 0px 50px 200px;
 }
-.formacao li {
-    display: inline-block;
-	text-align: center;
-	vertical-align: top;
-	box-sizing: border-box;
-	border-radius: 10px;
+.formacao li{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 30px 70px;
     position: static;
-    width: 368px;
-    height: 347px;
-    padding-right: 100px;
+    width: 136px;
+    height: 134px; 
+    flex: none;
+    margin: 35px 20px;
+    align-items: center;
+}
+.formacao img{
+    border-radius: 10%;
 }
 .descricao-formacao{
     position: static;
-    width: 300px;
+    width: 250px;
     height: 26px;
+    top: 294px;
     font-style: normal;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 20px;
+    line-height: 20px;
     color: #464646;
-    text-align: justify;
+    flex: none;
+    order: 1;
+    margin: 8px 0px 0px 0px;
 }
 .data{
     position: static;
-    width: 250px;
+    width: 200px;
     height: 19px;
+    top: 328px;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
     line-height: 19px;
     color: #464646;
-    text-align: justify; 
+    flex: none;
+    order: 2;
+    margin-right: 50px;
 }
-.experiencia{
+.experiencia-area{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px;
     position: static;
-    width: 1136px;
+    width: 1440px;
     height: 1886px;
     left: 152px;
     top: 2212px;
     flex: none;
     order: 4;
-    flex-grow: 0;
     margin: 32px 0px;
+}
+.experiencia-area h2{
+    margin-left: 100px;
+}
+.itens{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: static;
+    width: 1136px;
+    height: 1816px;
+    top: 70px;
+    flex: none;
+    order: 1;
+    margin: 32px 0px;
+}
+.experiencia{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: static;
+    width: 1136px;
+    height: 406px;
+    flex: none;
+    margin: 0px 80px;
+}
+.img-experiencia{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px opx;
+    position: static;
+    width: 772px;
+    height: 426px;
+    top: -10px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    flex: none;
+    margin: 0px 16px;
+}
+.img-experiencia img{
+    position: static;
+    width: 752px;
+    height: 406px;
+    left: 10px;
+    top: 10px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    flex: none;
+    margin: 10px 0px;
+}
+.infos{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: static;
+    width: 348px;
+    height: 112px;
+    left: 788px;
+    top: 147px;
+    flex: none;
+    order: 1;
+    flex-grow: 1;
+    margin: 0px 16px;
+}
+.infos h3, .infos-meio h3{
+    position: static;
+    width: 348px;
+    height: 26px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 26px;
+    color: #464646;
+    flex: none;
+    align-self: stretch;
+    margin: 5px 0px;
+}
+.infos p, .infos-meio p{
+    position: static;
+    width: 348px;
+    height: 19px;
+    top: 34px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #464646;
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    margin: 2.5px 0px;
+}
+.repositoio, .repositoio-meio{
+    position: absolute;
+    width: 105px;
+    height: 51px;
+    border: 1px solid #2A7AE4;
+    box-sizing: border-box;
+    margin: 70px 0px;
+    border-radius: 10%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #2A7AE4;
+
+}
+.demo, .demo-meio{
+    position: absolute;
+    width: 105px;
+    height: 51px;
+    background: #2A7AE4;
+    margin: 70px 130px;
+    border-radius: 10%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+.experiencia-meio{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: static;
+    width: 1136px;
+    height: 406px;
+    margin: 64px 0px;
+}
+.experiencia-meio img{
+    position: static;
+    width: 752px;
+    height: 427px;;
+    left: 384px;
+    top: -10.5px;
+    mix-blend-mode: normal;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    flex: none;
+    margin: 0px 16px;
+}
+.infos-meio{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: static;
+    width: 368px;
+    height: 138px;  
+    left: 0px;
+    top: 134px;
+    flex: none;
+    order: 0;
+    flex-grow: 1;
+    margin: 0px 16px;
+    padding-left: 100px;
+}
+.infos-meio h3{
+    margin: 5px 0px 20px 0px;
+}
+.infos-meio p{
+    margin: 15px 0px ; 
+}
+.repositoio-meio{
+    margin: 100px 0px; 
+}
+.demo-meio{
+    margin: 100px 130px;
 }
