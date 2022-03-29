@@ -16,7 +16,7 @@
                     <img src="assets/imagens/icons.png">
                     Conceição Peres
                 </div>
-                <ul class="links-topo">
+                <ul class="links-topo" pos>
                     <li id="linkSobre"><a href="#sobre">Sobre mim</a></li>
                     <li id="linkSkills"><a href="#skills">Skills</a></li>
                     <li id="linkHobbies"><a href="#hobbies">Hobbies</a></li>
@@ -29,12 +29,13 @@
         <main>
             <div class="apresentacao">
                 <div class="container">
-                    <h1>Olá meu nome é Conceição, sou desenvolvedora Front-end.</h1>
+                    <h1>Olá meu nome é Conceição, e construi essa página para que conheça um pouco mais sobre mim e meus projetos.</h1>
                     <p>Sou formada em Sistema de informação e atualmente estou em transição de carreira.</p>
                     <ul class="links-contatos">
                         <li id="linkGit"><a href="https://github.com/conceicao-peres" target="_blank">Github <img src="assets/imagens/seta.png"></a></li>
                         <li id="linkLinkedin"><a href="https://www.linkedin.com/in/conceicao-peres-da-silva" target="_blank">Linkedin <img src="assets/imagens/seta.png"></a></li>
-                        <li id="linkCurriculo"><a href="" target="_blank">Currículo <img src="assets/imagens/seta.png"></a></li>
+                        <li id="e-mail"><a href="mailto:conceicao-peres@hotmail.com" target="_blank">E-mail <img src="assets/imagens/seta.png"></a></li>
+                        <li id="linkCurriculo"><a href="curriculo.html" target="_blank">Currículo <img src="assets/imagens/seta.png"></a></li>
                     </ul>
                 </div>
                 <div class="foto">
@@ -80,10 +81,10 @@
                             <img src="assets/imagens/cozinhar.png">
                             <p class="descricao">Vegan Food</p>
                         </li>
-                        <li>
+                        <a href="https://www.instagram.com/consuperes/" target="_blank"><li>
                             <img src="assets/imagens/fotografia.png">
                             <p class="descricao">Fotografia</p>
-                        </li>
+                        </li></a>
                     </ul>
                 </div>
                 <div class="formacao" id="formacao">
@@ -94,16 +95,16 @@
                             <p class="descricao-formacao">Sistema de informação</p>
                             <p class="data">2011 - Uniban</p>
                         </li>
-                        <li>
+                        <a href="https://e-certificado.com/login/autenticar?c=796482A02A4F9515499140" target="blank"><li>
                             <img src="assets/imagens/hsm.jpeg">
                             <p class="descricao-formacao">Gestão de Marketing</p>
                             <p class="data">2020 - HSM University </p>
-                        </li>
-                        <li>
+                        </li></a>
+                        <a href="https://cursos.alura.com.br/user/conceicaoperes25/fullCertificate/dcb45d99f49bbcdb2882527e017e462b" target="blank"><li>
                             <img src="assets/imagens/alura.png">
                             <p class="descricao-formacao">Formação Front-end</p>
                             <p class="data">Em andamento - Alura</p>
-                        </li>
+                        </li></a>
                     </ul>
                 </div>
             </div>
@@ -117,16 +118,16 @@
                         <div class="infos">
                             <h3>Decodificador de texto</h3>
                             <p>Challenge Alura Codificador</p>
-                                <button class="repositoio" id="repositório">Repositório</button>
-                                <button class="demo" id="demo">Demo</button>
+                                <a href="https://github.com/conceicao-peres/encriptadorTextos#:~:text=/-,encriptadorTextos,-Public" target="_blank"><button class="repositoio" id="repositório">Repositório</button></a>
+                                <a href="https://conceicao-peres.github.io/encriptadorTextos/" target="_blank"><button class="demo" id="demo">Demo</button></a>
                         </div>
                     </div> 
                     <div class="experiencia-meio">
                         <div class="infos-meio">
                             <h3>Jogo criado com HTML, CSS e JavaScript</h3>
                             <p>Challenge Oracle</p>
-                                <button class="repositoio-meio" id="repositório">Repositório</button>
-                                <button class="demo-meio" id="demo">Demo</button>
+                                <a href="https://github.com/conceicao-peres/jogoDaForca#:~:text=/-,jogoDaForca,-Public" target="_blank"><button class="repositoio-meio" id="repositório">Repositório</button></a>
+                                <a href="https://conceicao-peres.github.io/jogoDaForca/" target="_blank"><button class="demo-meio" id="demo">Demo</button></a>
                         </div> 
                         <img src="assets/imagens/jogoDaForca.png">
                     </div>
@@ -137,8 +138,8 @@
                         <div class="infos">
                             <h3>Jogo Super Trunfo</h3>
                             <p>Imersão Dev Alura</p>
-                            <button class="repositoio" id="repositório">Repositório</button>
-                            <button class="demo" id="demo">Demo</button>
+                            <a href="https://github.com/conceicao-peres/superTrunfo#:~:text=/-,superTrunfo,-Public" target="_blank"><button class="repositoio" id="repositório">Repositório</button></a>
+                            <a href="https://conceicao-peres.github.io/superTrunfo/" target="_blank"><button class="demo" id="demo">Demo</button></a>
                         </div>
                     </div>
                 </div>
@@ -155,7 +156,7 @@
                             <p>Preencha o formulário e entrarei em contato o mais breve possível.</p>
                         </div>
                         <div class="campos">
-                            <form>
+                            <form id="formulario">
                                 <label for="nome"></label>
                                 <input type="text" id="nome" class="input-padrao" required placeholder="Nome">
     
@@ -167,9 +168,9 @@
                                 
                                 <label for="mensagem"></label>
 				                <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required placeholder="Mensagem"></textarea>
+                                <button class="botao-contato" id="botao-contato" type="submit">Enviar Mensagem</button>
                             </form>
                         </div>
-                        <button class="botao-contato" id="botao-contato">Enviar Mensagem</button>
                     </div>
                 </div>
             </div>
@@ -177,5 +178,6 @@
                &copy; Conceição Peres - 2022
             </div>
         </footer>
+        <script src="send-mail.js"></script>
     </body>
 </html>

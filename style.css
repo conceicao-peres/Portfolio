@@ -2,7 +2,10 @@
 
 body{
     font-family: 'Raleway', sans-serif;
+    box-sizing: border-box;
     background: #F5F5F5;
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,7 +60,14 @@ body{
     color: #464646;
     margin-left: 25px;
 }
-.links-topo a, .links-contatos a{
+
+.links-topo a:hover, .links-contatos a:hover{
+    font-weight: 700;
+	text-decoration: underline;
+    font-size: 18px;
+}
+
+.links-topo a, .links-contatos a, .lista-hobbies a, .lista-formacao a{
     color: #464646;
     text-decoration: none;
 }
@@ -88,11 +98,11 @@ body{
 h1{
     position: static;
     width: 751px;
-    height: 122px;
+    height: 152px;
     font-style: normal;
     font-weight: 700;
-    font-size: 50px;
-    line-height: 61px;
+    font-size: 40px;
+    line-height: 35px;
     color: #464646;
     flex: none;
     align-self: stretch;
@@ -280,6 +290,9 @@ h2{
     color: #2A7AE4;
     flex: none; 
     margin: 8px 0px;
+}
+.hobbies a:hover, .formacao a:hover{
+   background-color: #d3c7c7;
 }
 .descricao{
     font-style: normal;
@@ -485,6 +498,7 @@ h2{
     line-height: 19px;
     color: #FFFFFF;
 }
+
 .experiencia-meio{
     display: flex;
     flex-direction: row;
@@ -569,7 +583,7 @@ footer{
 .contato img{
     position: static;
     width: 464px;
-    height: 670px;
+    height: 590px;
     top: 65.5px;
     background: #EDEDED;
     flex: none;
@@ -629,7 +643,6 @@ form label, form legend {
     font-size: 16px;
     line-height: 20px;
     display: flex;
-    align-items: center;
     color: #A2A2A2;
 }
 .input-padrao {
@@ -648,11 +661,11 @@ form label, form legend {
     font-size: 16px;
     line-height: 20px;
     display: flex;
-    align-items: center;
     color: #000000;
 }
 form #mensagem{
     position: static;
+    font-family: 'Raleway';
     width: 656px;
     height: 133px;
     left: calc(50% - 656px/2);
